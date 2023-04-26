@@ -1,0 +1,30 @@
+{
+  "header": {
+    "navigation": {
+      "services": {
+        "title": "Services",
+        "allServices": "All Services",
+        "": ""
+      },
+      "team": {
+        "title": "Team"
+      },
+      "aboutus": {
+        "title": "About us"
+      },
+      "recruit": {
+        "title": "Recruit"
+      },
+      "contact": {
+        "title": "Contact"
+      }
+    }
+  },
+  "footer": {},
+  "sidebar": {},
+  "services": {},
+  "team": {},
+  "aboutus": {},
+  "recruit": {},
+  "contact": {}
+}

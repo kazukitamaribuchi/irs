@@ -1,0 +1,25 @@
+$set-prefix: '', '-moz-', '-webkit-';
+
+@mixin PropertySetPrefix($name, $value) {
+    @each $prefix in $set-prefix {
+        #{$prefix}#{$name}: $value;
+    }
+}
+
+
+/*
+使い方
+
+div {
+    @include PropertySetPrefix(transition, .2s);
+}
+
+↓
+
+div {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+*/

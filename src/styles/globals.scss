@@ -1,0 +1,11 @@
+/* アプリ全体で共通のスタイル */
+@use "variables";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: variables.$base-font;
+}

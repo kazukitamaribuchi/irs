@@ -1,0 +1,7 @@
+.active {
+    @apply opacity-100 duration-[1.5s];
+}
+
+.active_from_left {
+    @apply translate-x-0;
+}

@@ -1,0 +1,18 @@
+{
+  "header": {
+    "navigation": {
+      "Services": "サービス一覧",
+      "Team": "チーム",
+      "About us": "会社概要",
+      "Recruit": "求人",
+      "Contact": "コンタクト"
+    }
+  },
+  "footer": {},
+  "sidebar": {},
+  "services": {},
+  "team": {},
+  "aboutus": {},
+  "recruit": {},
+  "contact": {}
+}

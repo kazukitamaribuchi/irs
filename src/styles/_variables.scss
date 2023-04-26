@@ -1,0 +1,23 @@
+/* mixinの定義方法 => 深いネストも可能
+@mixin grayBox {
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #EEE;
+    color: #333;
+}
+
+.foo {
+    @include grayBox;
+}
+*/
+
+/* 変数の定義の仕方
+$base-font: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+
+body {
+    font-family: $base-font;
+}
+*/
+
+$base-font: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;

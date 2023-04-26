@@ -1,0 +1,27 @@
+.header_wrap {
+    @apply absolute top-0 z-[50] w-full;
+}
+
+.header_wrap_fixed {
+    @apply fixed z-[50] w-full;
+}
+
+.top_area {
+    @apply grid grid-cols-3 h-[7rem];
+}
+
+.top_left_area {
+    @apply pt-10 pl-14 pb-3 col-span-1;
+}
+
+// border-2 border-sky-400
+
+.top_right_area {
+    @apply pt-12 pl-24 col-span-2 flex justify-end;
+}
+
+// border-2 border-gray-500
+
+.navi_area {
+    @apply hidden md:block lg:block xl:block 2xl:block w-full;
+}
