@@ -14,7 +14,7 @@ export default function HeroHeaderMenu() {
             Findings from Aon’s 2021 Global Risk Management Survey
           </h2>
         </div>
-        <div className="mt-12">
+        <div className="mt-20">
           <ContactBtn />
         </div>
       </div>

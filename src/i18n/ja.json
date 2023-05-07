@@ -14,5 +14,10 @@
   "team": {},
   "aboutus": {},
   "recruit": {},
-  "contact": {}
+  "contact": {},
+  "breadcrumb": {
+    "home": "ホーム",
+    "services": "サービス",
+    "AllServices": "サービス一覧"
+  }
 }

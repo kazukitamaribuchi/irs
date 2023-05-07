@@ -10,7 +10,8 @@
         "title": "Team"
       },
       "aboutus": {
-        "title": "About us"
+        "title": "About us",
+        "company": "Company"
       },
       "recruit": {
         "title": "Recruit"
@@ -22,9 +23,39 @@
   },
   "footer": {},
   "sidebar": {},
-  "services": {},
+  "services": {
+    "allServicesCard": {
+      "0": {
+        "title": "Executive Protection Services",
+        "desc": "Our team of experienced security professionals provide discrete and confidential protection services to high-profile individuals."
+      },
+      "1": {
+        "title": "Background Screening Services",
+        "desc": "Our comprehensive background screening services can help identify potential risks and ensure a safe working environment."
+      },
+      "2": {
+        "title": "Security Patrol Services",
+        "desc": "Our trained security officers provide routine patrols to ensure the safety of your premises."
+      },
+      "3": {
+        "title": "Access Control Services",
+        "desc": "We provide various types of access control systems to manage entry and exit points on your property."
+      },
+      "4": {
+        "title": "Event Security Services",
+        "desc": "Our team provides comprehensive security coverage for events of all sizes, ensuring a safe and secure environment for all attendees."
+      }
+    }
+  },
   "team": {},
   "aboutus": {},
   "recruit": {},
-  "contact": {}
+  "contact": {},
+  "breadcrumb": {
+    "home": "Home",
+    "services": "Services",
+    "allServices": "All Services",
+    "team": "Team",
+    "company": "Company"
+  }
 }

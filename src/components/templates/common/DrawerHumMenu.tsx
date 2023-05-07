@@ -18,7 +18,6 @@ export default function DrawerHumMenu() {
         placement="right"
         onClose={onClose}
         open={isOpenDrawerHumMenu}
-        size="large"
         maskStyle={{ background: "rgba(0, 0, 0, 0.5)" }}
         style={{ background: "#f1f5f9" }}
       >

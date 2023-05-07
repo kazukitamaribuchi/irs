@@ -56,4 +56,24 @@ export namespace ServicesConst {
       type: 0,
     },
   ];
+  export const AllServices = [
+    {
+      id: 0,
+    },
+    {
+      id: 1,
+    },
+    {
+      id: 2,
+    },
+    {
+      id: 3,
+    },
+    {
+      id: 4,
+    },
+    {
+      id: 5,
+    },
+  ];
 }

@@ -17,7 +17,7 @@
 // border-2 border-sky-400
 
 .top_right_area {
-    @apply pt-12 pl-24 col-span-2 flex justify-end;
+    @apply pt-12 pl-24 col-span-2 flex justify-end relative;
 }
 
 // border-2 border-gray-500

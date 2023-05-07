@@ -1,9 +1,25 @@
-import { Menu, MenuProps } from "antd";
+import { Menu, MenuProps, Space } from "antd";
 import Link from "next/link";
 import { t } from "i18next";
 import { Link as Scroll } from "react-scroll";
+import { UtilsConst } from "../../../const/utils";
+import React from "react";
+import {
+  RiTeamLine,
+  RiBuildingLine,
+  RiBriefcase3Line,
+  RiBriefcase3Fill,
+  RiPhoneFill,
+} from "react-icons/ri";
+import { type } from "os";
 
-export default function Navigation() {
+interface Props {
+  fontColor?: string;
+}
+
+const changeLang = (value: string) => {};
+
+export default function Navigation({ fontColor = "text-white" }: Props) {
   const items: MenuProps["items"] = [
     {
       label: (
@@ -11,34 +27,39 @@ export default function Navigation() {
           {t("header.navigation.services.title")}
         </Scroll>
       ),
-      key: "1",
+      key: "0",
       children: [
         {
-          type: "group",
-          label: t("header.navigation.services.allServices"),
-          children: [
-            {
-              label: t("header.navigation.services.allServices"),
-              key: "1-1",
-            },
-          ],
+          label: (
+            <>
+              <RiBriefcase3Line className="inline-block" /> <Space />
+              <Link href="/services/all/">
+                {t("header.navigation.services.allServices")}
+              </Link>
+            </>
+          ),
+          key: "0-1",
         },
         {
           type: "divider",
         },
         {
-          type: "group",
-          label: "Item 1",
-          children: [
-            {
-              label: "Option 1",
-              key: "setting:1",
-            },
-            {
-              label: "Option 2",
-              key: "setting:2",
-            },
-          ],
+          label: (
+            <>
+              {/* <RiBriefcase3Fill className="inline-block" /> <Space /> */}
+              Executive Protection Services
+            </>
+          ),
+          key: "",
+        },
+        {
+          label: (
+            <>
+              {/* <RiBriefcase3Fill className="inline-block" /> <Space /> */}
+              Background Screening Services
+            </>
+          ),
+          key: "",
         },
       ],
     },
@@ -48,7 +69,18 @@ export default function Navigation() {
           {t("header.navigation.team.title")}
         </Scroll>
       ),
-      key: "2",
+      key: "1",
+      children: [
+        {
+          label: (
+            <>
+              <RiTeamLine className="inline-block" /> <Space />
+              <Link href="/team/">{t("header.navigation.team.title")}</Link>
+            </>
+          ),
+          key: "1-1",
+        },
+      ],
     },
     {
       label: (
@@ -56,16 +88,21 @@ export default function Navigation() {
           {t("header.navigation.aboutus.title")}
         </Scroll>
       ),
-      key: "3",
+      key: "2",
+      children: [
+        {
+          label: (
+            <>
+              <RiBuildingLine className="inline-block" /> <Space />
+              <Link href="/company/">
+                {t("header.navigation.aboutus.company")}
+              </Link>
+            </>
+          ),
+          key: "2-1",
+        },
+      ],
     },
-    // {
-    //   label: (
-    //     <Scroll to="recruit" smooth={true}>
-    //       {t("header.navigation.recruit.title")}
-    //     </Scroll>
-    //   ),
-    //   key: "4",
-    // },
     {
       label: (
         <Scroll to="contact" smooth={true} offset={0}>
@@ -74,7 +111,20 @@ export default function Navigation() {
           </p>
         </Scroll>
       ),
-      key: "5",
+      key: "3",
+      children: [
+        {
+          label: (
+            <>
+              <RiPhoneFill className="inline-block" /> <Space />
+              <a href={UtilsConst.GoogleForm} target="_black">
+                Contact Form
+              </a>
+            </>
+          ),
+          key: "3-1",
+        },
+      ],
     },
   ];
 
@@ -83,16 +133,19 @@ export default function Navigation() {
   };
 
   return (
-    <Menu
-      onClick={onClick}
-      mode="horizontal"
-      items={items}
-      className="text-base"
-      style={{
-        background: "none",
-        color: "white",
-        marginLeft: "42%",
-      }}
-    />
+    <>
+      <Menu
+        onClick={onClick}
+        mode="horizontal"
+        items={items}
+        className={`font-sans font-bold ${fontColor}`}
+        style={{
+          background: "none",
+          marginLeft: "41%",
+          border: "none",
+          fontSize: "16px",
+        }}
+      />
+    </>
   );
 }

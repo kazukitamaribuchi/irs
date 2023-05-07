@@ -12,7 +12,7 @@ export default function IrsLogoOnly({ height = 45, width = 45 }: Props) {
     <Link href="/">
       <Image
         className={styles.logo}
-        src="/images/logo.png"
+        src="/images/logo1.png"
         height={height}
         width={width}
         alt="IRS Logo"
